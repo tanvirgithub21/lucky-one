@@ -7,20 +7,28 @@ const CardAndSelectedaria = () => {
 
     const [items, setItems] = React.useState([]);
 
-    // lode data to server 
+    // lode data to server
     useEffect(()=>{
         fetch("https://raw.githubusercontent.com/tanvirgithub21/ass-8-data/gh-pages/data.json")
         .then(response => response.json())
         .then(data => setItems(data)
         )
-    },[])
+    },[]);
 
+    // onclick function 
+
+    function addToCard(data){
+        const cardData = data;
+        console.log(cardData)
+    }
+    
+    
     return (
-        <div>
+        <div className='cardAndDelected'>
             {/* all card item  */}
             <div className="allItem">
             {
-                items.map(item => <SingleItem item={item} key={item.id} />)
+                items.map(item => <SingleItem item={item} addToCard={addToCard} key={item.id} />)
             }
             </div>
             {/* Selected aria  */}

@@ -1,10 +1,15 @@
 import React from 'react';
 import './SelectedItem.css';
 
-const SelectedItem = () => {
+const SelectedItem = ({cardData}) => {
+    console.log
+        
     return (
-        <div>
-            
+        <div className='check'>
+            <h3>Selected Items</h3>
+            <div>
+
+            </div>
         </div>
     );
 };

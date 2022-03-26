@@ -1,5 +1,12 @@
+.cardAndDelected{
+    display: flex;
+}
 .allItem{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
+    flex: 9;
+}
+.selectedItemList{
+    flex: 3;
 }
