@@ -8,19 +8,3 @@
     margin: 10px 0;
     font-weight: 400;
 }
-
-/* button style  */
-.btn{
-    display: flex;
-    flex-direction: column;
-}
-.cardBtn{
-    margin: .4rem auto;
-    background-color: green;
-    color: white;
-    padding: .5rem 1rem;
-    border: none;
-    border-radius: 1.2rem;
-    font-weight: 600;
-    font-size: .9rem;
-}
