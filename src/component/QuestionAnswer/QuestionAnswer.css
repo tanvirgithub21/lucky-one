@@ -1,0 +1,25 @@
+.questionBox{
+    margin: 60px 0;
+}
+.questionBox h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.answer{
+    display: flex;
+    justify-content: center;
+
+}
+.answerCard{
+    width: 300px;
+}
+.answerCard h3{
+    text-align: center;
+    font-size: 1.1rem;
+}
+.answerCard p{
+    max-width: 220px;
+    margin: auto;
+    text-align: justify;
+    font-size: 0.95rem;
+}
