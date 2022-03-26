@@ -15,25 +15,35 @@ const CardAndSelectedaria = () => {
         )
     },[]);
 
-    // onclick function 
+    // set card data this state 
+    const [cardData, setCardData] = React.useState([]);
 
+    // onclick function 
     function addToCard(data){
-        const cardData = data;
-        console.log(cardData)
+        
+        if(cardData.length < 4){
+            let newCardData = [...cardData, data]
+            setCardData(newCardData)
+        }else{
+            console.log("Error mss dite hobe");  //==================== Add Error Mass Loading... >>
+            
+        }
     }
-    
-    
+
     return (
         <div className='cardAndDelected'>
             {/* all card item  */}
             <div className="allItem">
             {
-                items.map(item => <SingleItem item={item} addToCard={addToCard} key={item.id} />)
+                items.map(item => (
+
+                    <SingleItem item={item} addToCard={addToCard} key={item.id} />
+                ))
             }
             </div>
             {/* Selected aria  */}
             <div className="selectedItemList">
-                <SelectedItem />
+                <SelectedItem cardData={cardData}/>
             </div>
         </div>
     );
