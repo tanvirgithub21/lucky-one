@@ -1,6 +1,7 @@
 
 .App {
-  padding: 0px 3%;
+  padding: 0px 5px;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -35,5 +36,12 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* responsive style  */
+@media only screen and (max-width: 570px){
+  .App{
+    overflow: hidden;
   }
 }

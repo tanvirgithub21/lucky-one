@@ -7,3 +7,10 @@
     text-align: center;
     font-size: 1.4rem;
 }
+
+/* responsive style  */
+@media only screen and (max-width: 570px){
+    .navBar h1{
+        font-size: 1rem;
+    }
+}
