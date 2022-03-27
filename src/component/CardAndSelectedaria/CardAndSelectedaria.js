@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ErrorMass from '../ErrorMass/ErrorMass';
 import SelectedItem from '../SelectedItem/SelectedItem';
 import SingleItem from '../SingleItem/SingleItem';
 import "./CardAndSelectedaria.css"
@@ -18,20 +19,31 @@ const CardAndSelectedaria = () => {
     // set card data this state 
     const [cardData, setCardData] = React.useState([]);
 
+    //show error message or not 
+    const [errorReport, setErrorReport] = React.useState(false);
+
+
     // choose Agine on click function 
     const chooseAgineHendel = () => setCardData([]);
 
-    // onclick function 
+    //Error button Continue function
+    const errorEvent = messageStatus =>{
+        setErrorReport(messageStatus);
+    }
+
+    // onclick function added four item or not 
     function addToCard(data){
         
         if(cardData.length < 4){
-            let newCardData = [...cardData, data]
-            setCardData(newCardData)
+
+            let newCardData = [...cardData, data];
+            setCardData(newCardData) 
+
         }else{
-            console.log("Error mss dite hobe");  //==================== Add Error Mass Loading... >>
-            
+            setErrorReport(true)
         }
     }
+
     return (
         <div className='cardAndDelected'>
             {/* all card item  */}
@@ -47,6 +59,9 @@ const CardAndSelectedaria = () => {
             <div className="selectedItemList">
                 <SelectedItem cardData={cardData} chooseAginFunc={chooseAgineHendel}/>
             </div>
+            {
+                errorReport && <ErrorMass massage={"A maximum of four items can be added"} setErrorReport={setErrorReport}/>
+            }
         </div>
     );
 };

@@ -1,21 +1,32 @@
 .position{
     position: sticky;
     top: 20px;
-    box-shadow: 0 7px 14px rgb(54 54 54 / 19%);
-    border-radius: 7px;
+    
 }
 .cardBOx{
     background-color: rgb(247, 247, 247);
     border-radius: 8px;
     height: 80vh;
     padding: 0 1rem;
-    position: relative;
+    box-shadow: 0 7px 14px rgb(54 54 54 / 19%);
+    border-radius: 7px;
 }
 .cardBOx h3{
     text-align: center;
+    text-transform: uppercase;
     margin: 0;
     padding: 15px 0;
     font-size: 1.4rem;
+    position: relative;
+}
+.cardBOx h3::before{
+    position: absolute;
+    content: "";
+    width: 70%;
+    border-bottom: 3px solid rgb(9, 191, 236);
+    bottom: 12px;
+    left: 50%;
+    transform: translate(-50%);
 }
 .careItemName{
     line-height: 1.1rem;

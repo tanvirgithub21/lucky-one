@@ -1,5 +1,6 @@
 .cardAndDelected{
     display: flex;
+    position: relative;
 }
 .allItem{
     display: grid;
@@ -9,4 +10,5 @@
 }
 .selectedItemList{
     flex: 3;
+    position: relative;
 }

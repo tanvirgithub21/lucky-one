@@ -4,7 +4,7 @@ import './SelectedItem.css';
 
  
 const SelectedItem = ({cardData, chooseAginFunc}) => {  
-    let newCardData = [...cardData];
+    let newCardData = [...cardData];    
 
     return (
         <div className="position">
@@ -17,7 +17,7 @@ const SelectedItem = ({cardData, chooseAginFunc}) => {
                         <p key={singleCardData.id}>{singleCardData.name}</p>
                     ))
                 }
-                <Button chooseAginFunc={chooseAginFunc}/>
+                <Button chooseAginFunc={chooseAginFunc} cardItemData={newCardData}/>
             </div>
         </div>
         </div>
