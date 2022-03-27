@@ -1,10 +1,10 @@
 import React from 'react';
 import "./Button.css"
 
-const Button = () => {
+const Button = ({chooseAginFunc}) => {
     return (
         <div className="btn">
-            <button className='cardBtn' >Choose Again</button>
+            <button className='cardBtn' onClick={chooseAginFunc}>Choose Again</button>
             <button className='cardBtn' >Choose For One</button>
         </div>
     );

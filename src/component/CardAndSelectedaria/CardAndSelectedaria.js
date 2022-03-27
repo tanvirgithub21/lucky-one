@@ -18,6 +18,9 @@ const CardAndSelectedaria = () => {
     // set card data this state 
     const [cardData, setCardData] = React.useState([]);
 
+    // choose Agine on click function 
+    const chooseAgineHendel = () => setCardData([]);
+
     // onclick function 
     function addToCard(data){
         
@@ -29,7 +32,6 @@ const CardAndSelectedaria = () => {
             
         }
     }
-
     return (
         <div className='cardAndDelected'>
             {/* all card item  */}
@@ -43,7 +45,7 @@ const CardAndSelectedaria = () => {
             </div>
             {/* Selected aria  */}
             <div className="selectedItemList">
-                <SelectedItem cardData={cardData}/>
+                <SelectedItem cardData={cardData} chooseAginFunc={chooseAgineHendel}/>
             </div>
         </div>
     );
