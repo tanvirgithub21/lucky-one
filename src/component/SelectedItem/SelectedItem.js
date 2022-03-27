@@ -14,7 +14,7 @@ const SelectedItem = ({cardData, chooseAginFunc}) => {
             <div className='careItemName'>
                 {
                     newCardData.map(singleCardData => (
-                        <p key={singleCardData.id}>{singleCardData.name}</p>
+                        <p className='itmeName' key={singleCardData.id}>{singleCardData.name}</p>
                     ))
                 }
                 <Button chooseAginFunc={chooseAginFunc} cardItemData={newCardData}/>

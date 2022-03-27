@@ -1,12 +1,15 @@
 import React from 'react';
 import "./ShowChooseItem.css"
 
-const ShowChooseItem = ({showData}) => {
-    console.log(showData);
-    
-const {name, img, price, id} = showData;
+const ShowChooseItem = ({randomItem, okBtnFunction}) => {
+
+    const {name, img, price} = randomItem;
+
     return (
+        
+        
         <div className='showItem'>
+            
             <div className="imgBox">
                 <img src={img} alt="img" />
             </div>
@@ -16,7 +19,7 @@ const {name, img, price, id} = showData;
             </div>
 
             <div className="btnBox">
-            <button>Ok</button>
+            <button onClick={okBtnFunction}>Ok</button>
             </div>
         </div>
     );

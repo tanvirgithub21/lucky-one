@@ -1,6 +1,10 @@
 
 button{
   cursor: pointer;
+  transition: ease-out .3s;
+}
+button:hover{
+  background-color: rgb(44, 153, 255);
 }
 
 body {

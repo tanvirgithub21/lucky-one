@@ -4,7 +4,7 @@
     overflow: hidden;
     border-radius: 9px;
     box-sizing: border-box;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 7px 14px rgba(54, 54, 54, 0.19);
     transition: ease-out .4s;
 }
@@ -40,7 +40,17 @@
     border-radius: 16px;
     display: flex;
     align-items: center;
+    transition: ease-out .4s;
+}
+.infoBox button:hover{
+    background-color: rgb(44, 153, 255);
 }
 .soppingIcon{
     margin-left: 5px;
+}
+
+.itmeName{
+    box-shadow: rgb(149, 163, 175) 3px 3px 6px 0px inset, rgba(173, 173, 173, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 8px;
+    padding: 10px;
 }
