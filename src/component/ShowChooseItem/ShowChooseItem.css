@@ -1,6 +1,6 @@
 .showItem{
     position: absolute;
-    width: 260px;
+    width: 15.4rem;
     padding: 10px;
     overflow: hidden;
     border-radius: 9px;
@@ -42,4 +42,17 @@
     color: white;
     padding: .3rem .8rem;
     border-radius: 1rem;
+}
+
+
+/* responsive style  */
+
+@media only screen and (max-width:900px){
+    .showItem{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
 }

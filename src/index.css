@@ -1,4 +1,6 @@
-
+html{
+  font-size: 16px;
+}
 button{
   cursor: pointer;
   transition: ease-out .3s;

@@ -14,10 +14,19 @@
     border-radius: 1.2rem;
     font-weight: 600;
     font-size: .9rem;
-    position: relative;
+
 }
 .btnBOx{
     position: absolute;
     top: 0;
     
+}
+
+/* responsive style  */
+@media only screen and (max-width:900px){
+    .btnBox{
+        position:static;
+        display: flex;
+        justify-content: center;
+    }
 }
